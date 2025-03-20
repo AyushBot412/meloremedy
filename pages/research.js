@@ -332,7 +332,7 @@ const Research = (props) => {
           content91={
             <Fragment>
               <span className="research-text66">
-                many students get far less than recommended, with 70 to 96
+                Many students get far less than recommended, with 70 to 96
                 percent of college students receiving less than eight hours of
                 sleep per night and over 50 percent sleeping less than seven.
                 Through the use of music as medicine, a personalized approach to
@@ -348,11 +348,83 @@ const Research = (props) => {
               </span>
             </Fragment>
           }
+          heading14={
+            <Fragment>
+              <span className="research-text70">
+                <span>Research Findings</span>
+                <br></br>
+              </span>
+            </Fragment>
+          }
+          content14={
+            <Fragment>
+              <span className="research-text73">
+                <span>
+                  From our survey, we found that majority of our responders
+                  (ages 18-25) receives 6-7 hours of sleep per night!
+                </span>
+                <br></br>
+              </span>
+            </Fragment>
+          }
+          heading31={
+            <Fragment>
+              <span className="research-text76">
+                User Interview Preferences:
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+            </Fragment>
+          }
+          content31={
+            <Fragment>
+              <span className="research-text77">
+                From our user interviews, we found that users would prefer
+                gamification, a large music selection, music recommendations,
+                and a clear visualization of data in our app.
+              </span>
+            </Fragment>
+          }
+          heading41={
+            <Fragment>
+              <span className="research-text78">Application Focus Areas:</span>
+            </Fragment>
+          }
+          content41={
+            <Fragment>
+              <span className="research-text79">
+                We designed our app with a simple layout and game incentive to
+                keep users intrigued, and displayed data in an understandable
+                way.
+              </span>
+            </Fragment>
+          }
+          heading51={
+            <Fragment>
+              <span className="research-text80">External Inspiration:</span>
+            </Fragment>
+          }
+          content51={
+            <Fragment>
+              <span className="research-text81">
+                <span>
+                  We also took inspiration from other applications and their
+                  user interfaces such as Spotify for music playing, playlist
+                  creation and recommendations as well as Apple Health for data
+                  visualization.
+                </span>
+                <br></br>
+              </span>
+            </Fragment>
+          }
         ></ContentList4>
         <Footer
           text={
             <Fragment>
-              <span className="research-text70">
+              <span className="research-text84">
                 <span>
                   M E L O
                   <span
@@ -361,7 +433,7 @@ const Research = (props) => {
                     }}
                   />
                 </span>
-                <span className="research-text72">R E M</span>
+                <span className="research-text86">R E M</span>
                 <span> E D Y </span>
               </span>
             </Fragment>
@@ -489,9 +561,33 @@ const Research = (props) => {
           }
           .research-text70 {
             display: inline-block;
+          }
+          .research-text73 {
+            display: inline-block;
+          }
+          .research-text76 {
+            display: inline-block;
+          }
+          .research-text77 {
+            display: inline-block;
+          }
+          .research-text78 {
+            display: inline-block;
+          }
+          .research-text79 {
+            display: inline-block;
+          }
+          .research-text80 {
+            display: inline-block;
+          }
+          .research-text81 {
+            display: inline-block;
+          }
+          .research-text84 {
+            display: inline-block;
             font-weight: 700;
           }
-          .research-text72 {
+          .research-text86 {
             color: #8d8d8d;
           }
         `}

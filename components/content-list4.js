@@ -10,7 +10,7 @@ const ContentList4 = (props) => {
         <div className="content-list4-max-width thq-flex-column thq-section-max-width">
           <div className="content-list4-content2 thq-flex-column">
             <ul className="content-list4-ul1 thq-flex-column">
-              <li className="content-list4-li1 thq-flex-column list-item">
+              <li className="content-list4-li10 thq-flex-column list-item">
                 <h2 className="content-list4-heading7 thq-heading-2">
                   {props.heading7 ?? (
                     <Fragment>
@@ -105,7 +105,7 @@ const ContentList4 = (props) => {
                       {props.content91 ?? (
                         <Fragment>
                           <span className="content-list4-text11">
-                            many students get far less than recommended, with 70
+                            Many students get far less than recommended, with 70
                             to 96 percent of college students receiving less
                             than eight hours of sleep per night and over 50
                             percent sleeping less than seven. Through the use of
@@ -123,8 +123,8 @@ const ContentList4 = (props) => {
           </div>
           <div className="content-list4-content10 thq-flex-column">
             <ul className="content-list4-ul3 thq-flex-column">
-              <li className="content-list4-li5 thq-flex-column list-item">
-                <h2 className="content-list4-heading1 thq-heading-2">
+              <li className="content-list4-li14 thq-flex-column list-item">
+                <h2 className="content-list4-heading11 thq-heading-2">
                   {props.heading1 ?? (
                     <Fragment>
                       <span className="content-list4-text32">
@@ -141,7 +141,7 @@ const ContentList4 = (props) => {
                     </Fragment>
                   )}
                 </h2>
-                <p className="content-list4-content1 thq-body-small">
+                <p className="content-list4-content11 thq-body-small">
                   {props.content1 ?? (
                     <Fragment>
                       <span className="content-list4-text17">
@@ -263,6 +263,115 @@ const ContentList4 = (props) => {
               </li>
             </ul>
           </div>
+          <div className="content-list4-content12 thq-flex-column">
+            <ul className="content-list4-ul5 thq-flex-column">
+              <li className="content-list4-li19 thq-flex-column list-item">
+                <h2 className="content-list4-heading12 thq-heading-2">
+                  {props.heading14 ?? (
+                    <Fragment>
+                      <span className="content-list4-text36">
+                        <span>Research Findings</span>
+                        <br></br>
+                      </span>
+                    </Fragment>
+                  )}
+                </h2>
+                <p className="content-list4-content13 thq-body-small">
+                  {props.content14 ?? (
+                    <Fragment>
+                      <span className="content-list4-text39">
+                        <span>
+                          From our survey, we found that majority of our
+                          responders (ages 18-25) receives 6-7 hours of sleep
+                          per night!
+                        </span>
+                        <br></br>
+                      </span>
+                    </Fragment>
+                  )}
+                </p>
+                <ul className="content-list4-ul6 thq-flex-column">
+                  <li className="list-item">
+                    <h3 className="thq-heading-3">
+                      {props.heading31 ?? (
+                        <Fragment>
+                          <span className="content-list4-text42">
+                            User Interview Preferences:
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: ' ',
+                              }}
+                            />
+                          </span>
+                        </Fragment>
+                      )}
+                    </h3>
+                    <p className="thq-body-small">
+                      {props.content31 ?? (
+                        <Fragment>
+                          <span className="content-list4-text43">
+                            From our user interviews, we found that users would
+                            prefer gamification, a large music selection, music
+                            recommendations, and a clear visualization of data
+                            in our app.
+                          </span>
+                        </Fragment>
+                      )}
+                    </p>
+                  </li>
+                  <li className="list-item">
+                    <h3 className="thq-heading-3">
+                      {props.heading41 ?? (
+                        <Fragment>
+                          <span className="content-list4-text44">
+                            Application Focus Areas:
+                          </span>
+                        </Fragment>
+                      )}
+                    </h3>
+                    <p className="thq-body-small">
+                      {props.content41 ?? (
+                        <Fragment>
+                          <span className="content-list4-text45">
+                            We designed our app with a simple layout and game
+                            incentive to keep users intrigued, and displayed
+                            data in an understandable way.
+                          </span>
+                        </Fragment>
+                      )}
+                    </p>
+                  </li>
+                  <li className="list-item">
+                    <h3 className="thq-heading-3">
+                      {props.heading51 ?? (
+                        <Fragment>
+                          <span className="content-list4-text46">
+                            External Inspiration:
+                          </span>
+                        </Fragment>
+                      )}
+                    </h3>
+                    <p className="thq-body-small">
+                      {props.content51 ?? (
+                        <Fragment>
+                          <span className="content-list4-text47">
+                            <span>
+                              We also took inspiration from other applications
+                              and their user interfaces such as Spotify for
+                              music playing, playlist creation and
+                              recommendations as well as Apple Health for data
+                              visualization.
+                            </span>
+                            <br></br>
+                          </span>
+                        </Fragment>
+                      )}
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <style jsx>
@@ -289,7 +398,7 @@ const ContentList4 = (props) => {
           .content-list4-ul1 {
             align-items: flex-start;
           }
-          .content-list4-li1 {
+          .content-list4-li10 {
             align-items: flex-start;
           }
           .content-list4-heading7 {
@@ -310,17 +419,38 @@ const ContentList4 = (props) => {
           .content-list4-ul3 {
             align-items: flex-start;
           }
-          .content-list4-li5 {
+          .content-list4-li14 {
             align-items: flex-start;
           }
-          .content-list4-heading1 {
+          .content-list4-heading11 {
             align-self: center;
             text-align: center;
           }
-          .content-list4-content1 {
+          .content-list4-content11 {
             margin-bottom: var(--dl-layout-space-halfunit);
           }
           .content-list4-ul4 {
+            align-items: flex-start;
+            padding-left: var(--dl-layout-space-fiveunits);
+          }
+          .content-list4-content12 {
+            align-self: stretch;
+            align-items: flex-start;
+          }
+          .content-list4-ul5 {
+            align-items: flex-start;
+          }
+          .content-list4-li19 {
+            align-items: flex-start;
+          }
+          .content-list4-heading12 {
+            align-self: center;
+            text-align: center;
+          }
+          .content-list4-content13 {
+            margin-bottom: var(--dl-layout-space-halfunit);
+          }
+          .content-list4-ul6 {
             align-items: flex-start;
             padding-left: var(--dl-layout-space-fiveunits);
           }
@@ -378,11 +508,38 @@ const ContentList4 = (props) => {
           .content-list4-text35 {
             display: inline-block;
           }
+          .content-list4-text36 {
+            display: inline-block;
+          }
+          .content-list4-text39 {
+            display: inline-block;
+          }
+          .content-list4-text42 {
+            display: inline-block;
+          }
+          .content-list4-text43 {
+            display: inline-block;
+          }
+          .content-list4-text44 {
+            display: inline-block;
+          }
+          .content-list4-text45 {
+            display: inline-block;
+          }
+          .content-list4-text46 {
+            display: inline-block;
+          }
+          .content-list4-text47 {
+            display: inline-block;
+          }
           @media (max-width: 767px) {
             .content-list4-ul2 {
               padding-left: var(--dl-layout-space-threeunits);
             }
             .content-list4-ul4 {
+              padding-left: var(--dl-layout-space-threeunits);
+            }
+            .content-list4-ul6 {
               padding-left: var(--dl-layout-space-threeunits);
             }
           }
@@ -391,6 +548,9 @@ const ContentList4 = (props) => {
               padding-left: var(--dl-layout-space-oneandhalfunits);
             }
             .content-list4-ul4 {
+              padding-left: var(--dl-layout-space-oneandhalfunits);
+            }
+            .content-list4-ul6 {
               padding-left: var(--dl-layout-space-oneandhalfunits);
             }
           }
@@ -419,6 +579,14 @@ ContentList4.defaultProps = {
   content5: undefined,
   heading1: undefined,
   content9: undefined,
+  heading14: undefined,
+  content14: undefined,
+  heading31: undefined,
+  content31: undefined,
+  heading41: undefined,
+  content41: undefined,
+  heading51: undefined,
+  content51: undefined,
 }
 
 ContentList4.propTypes = {
@@ -440,6 +608,14 @@ ContentList4.propTypes = {
   content5: PropTypes.element,
   heading1: PropTypes.element,
   content9: PropTypes.element,
+  heading14: PropTypes.element,
+  content14: PropTypes.element,
+  heading31: PropTypes.element,
+  content31: PropTypes.element,
+  heading41: PropTypes.element,
+  content41: PropTypes.element,
+  heading51: PropTypes.element,
+  content51: PropTypes.element,
 }
 
 export default ContentList4

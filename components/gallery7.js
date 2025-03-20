@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 
+import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
@@ -23,7 +24,7 @@ const Gallery7 = (props) => {
                 <Fragment>
                   <span className="gallery7-text4">
                     Explore the various hue packs used in MeloREMedy, along with
-                    the original lo-fi wireframes and a user flow diagram!
+                    a user flow diagram and a fully functioning Figma prototype!
                   </span>
                 </Fragment>
               )}
@@ -44,23 +45,27 @@ const Gallery7 = (props) => {
                 />
               </div>
               <div className="gallery7-container3">
-                <img
-                  alt={props.imageAlt}
-                  src={props.imageSrc}
-                  className="gallery7-image3 thq-img-ratio-16-9"
-                />
-                <img
-                  alt={props.imageAlt1}
-                  src={props.imageSrc1}
-                  className="gallery7-image4 thq-img-ratio-16-9"
-                />
+                <div>
+                  <div className="gallery7-container5">
+                    <Script
+                      html={`<iframe
+  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+  width="800"
+  height="450"
+  src="https://embed.figma.com/proto/OBOjI2G1nvoerRSoKsDpF3/MeloREMedy?node-id=136-3&starting-point-node-id=136%3A3&scaling=contain&content-scaling=fixed&embed-host=share"
+  allowfullscreen
+></iframe>
+`}
+                    ></Script>
+                  </div>
+                </div>
                 <img
                   alt={props.imageAlt12}
                   src={props.imageSrc12}
-                  className="gallery7-image5"
+                  className="gallery7-image"
                 />
               </div>
-              <div className="gallery7-container4">
+              <div className="gallery7-container6">
                 <img
                   alt={props.image6Alt}
                   src={props.image6Src}
@@ -159,22 +164,15 @@ const Gallery7 = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .gallery7-image3 {
-            width: 488px;
-            height: 337px;
-            object-fit: cover;
+          .gallery7-container5 {
+            display: contents;
           }
-          .gallery7-image4 {
-            width: 488px;
-            height: 337px;
-            object-fit: cover;
-          }
-          .gallery7-image5 {
+          .gallery7-image {
             width: 100%;
             height: auto;
             object-fit: cover;
           }
-          .gallery7-container4 {
+          .gallery7-container6 {
             gap: var(--dl-layout-space-oneandhalfunits);
             flex: 1;
             width: auto;
@@ -218,7 +216,7 @@ const Gallery7 = (props) => {
             .gallery7-container3 {
               width: 100%;
             }
-            .gallery7-container4 {
+            .gallery7-container6 {
               width: 100%;
             }
           }
@@ -240,15 +238,11 @@ Gallery7.defaultProps = {
   image6Alt: 'Meloremedy Music Therapy',
   image2Src: '/rectangle%208-1500w.png',
   image1Src: '/rectangle%206-1500w.png',
-  imageAlt: 'image',
   image2Alt: 'Meloremedy Gardening Community Forum',
   heading1: undefined,
-  imageAlt1: 'image',
   image7Alt: 'Meloremedy Sleep Deprivation Solution',
-  imageSrc: '/home%20page%20-%201.svg',
   content1: undefined,
   image1Alt: 'Meloremedy Plant Remedies',
-  imageSrc1: '/home%20page%20-%202.svg',
   imageSrc12: '/user%20flow%20diagram-1500w.png',
 }
 
@@ -259,15 +253,11 @@ Gallery7.propTypes = {
   image6Alt: PropTypes.string,
   image2Src: PropTypes.string,
   image1Src: PropTypes.string,
-  imageAlt: PropTypes.string,
   image2Alt: PropTypes.string,
   heading1: PropTypes.element,
-  imageAlt1: PropTypes.string,
   image7Alt: PropTypes.string,
-  imageSrc: PropTypes.string,
   content1: PropTypes.element,
   image1Alt: PropTypes.string,
-  imageSrc1: PropTypes.string,
   imageSrc12: PropTypes.string,
 }
 

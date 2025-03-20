@@ -130,8 +130,8 @@ const Design = (props) => {
           content1={
             <Fragment>
               <span className="design-text28">
-                Explore the various hue packs used in MeloREMedy, along with the
-                original lo-fi wireframes and a user flow diagram!
+                Explore the various hue packs used in MeloREMedy, along with a
+                user flow diagram and a fully functioning Figma prototype!
               </span>
             </Fragment>
           }
